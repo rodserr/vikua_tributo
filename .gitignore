@@ -47,7 +47,7 @@ vignettes/*.pdf
 *.html
 *.jpg
 *.jpeg
-*.png
+#*.png
 *.docx
 *.txt
 *.zip
