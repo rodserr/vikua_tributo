@@ -2,7 +2,7 @@
 ui_raw <- navbarPage(
     "Vikua Tributo Dashboard", id="nav",
     # Interactive map----
-    tabPanel("Interactive map",
+    tabPanel("Mapa Interactivo",
              div(class="outer",
                  
                  tags$head(
@@ -20,7 +20,7 @@ ui_raw <- navbarPage(
                    draggable = TRUE, top = 60, left = "auto", right = 20, bottom = "auto",
                    width = 330, height = "auto",
                                
-                   h2("Variable Explorer"),
+                   h2("Explorador de Variables"),
                                
                    selectInput(
                      "color_definition",
@@ -48,7 +48,7 @@ ui_raw <- navbarPage(
              )
     ),
     # Data Explorer-----
-    tabPanel("Data explorer",
+    tabPanel("Explorador de Datos",
              fluidRow(
                column(3, selectInput("actividad_economica", "Actividad Economica", act_econ_list, multiple=TRUE) ),
                column(3, textInput("empresa", "Empresa") )
@@ -74,9 +74,9 @@ secure_app(
   # add information on bottom ?
   tags_bottom = tags$div(
     tags$p(
-      "For any question, please  contact ",
+      "Cualquier inquietud, por favor contactar ",
       tags$a(
-        href = "mailto:someone@example.com?Subject=Shiny%20aManager",
+        href = "mailto: tech@vikua.com",
         target="_top", "administrator"
       )
     )
@@ -86,5 +86,5 @@ secure_app(
   background  = "linear-gradient(rgba(0, 0, 255, 0.5),
                        rgba(255, 255, 0, 0.5));", 
   # set language ?
-  lan = use_language("es")
+  language = "es"
 )
